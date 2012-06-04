@@ -411,6 +411,8 @@ class TextListener extends Listener
   # callback - The Function that is triggered if the incoming message matches.
   constructor: (@robot, @regex, @callback) ->
     @matcher = (message) =>
+      if !(message instanceof Robot.TextMessage)
+        message = new Robot.TextMessage(message.user, message.text)
       if message instanceof Robot.TextMessage
         message.match @regex
 
