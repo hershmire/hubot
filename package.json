@@ -20,7 +20,8 @@
     "scoped-http-client": "0.9.7",
     "log": "1.3.0",
     "connect": "2.1.0",
-    "connect_router": "1.8.6"
+    "connect_router": "1.8.6",
+    "steckel-hubot-irc": "git://github.com/steckel/hubot-irc.git"
   },
 
   "main": "./index",
