@@ -22,10 +22,14 @@
     "connect": "2.1.0",
     "connect_router": "1.8.6",
     "steckel-hubot-irc": "git://github.com/steckel/hubot-irc.git",
-    "redis": "~0.7.2"
+    "redis": "~0.7.2",
+    "nodemon": "~0.6.23"
   },
   "main": "./index",
   "bin": {
     "hubot": "./bin/hubot"
+  },
+   "scripts": {
+    "start": "./node_modules/nodemon/nodemon.js --exec './bin/hubot -a irc'"
   }
 }
